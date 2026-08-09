@@ -23,17 +23,18 @@
    1. TOKENS
 --------------------------------------------------------------------- */
 :root {
-  /* Colour */
-  --color-bg:        #17110c;   /* deep espresso, near-black background   */
-  --color-bg-alt:    #1e160f;   /* panel background, one step lighter     */
-  --color-bg-raised: #261c12;   /* card background                        */
-  --color-cream:     #f4ecdc;   /* primary warm cream text                */
-  --color-cream-dim: #cabfa8;   /* secondary / muted text                 */
-  --color-coffee:    #55402d;   /* coffee brown — borders, deep accents   */
-  --color-line:      #3a2c1e;   /* hairline borders / dividers            */
-  --color-caramel:   #c98c4f;   /* caramel accent — CTAs, links           */
-  --color-caramel-dark: #a5713b;/* caramel hover / active                 */
-  --color-copper:    #b8935a;   /* muted copper/gold — sparing detail     */
+  /* Colour — matcha sage, matched to the real CupCoffee shopfront
+     (black signage, sage/matcha green, warm cream) */
+  --color-bg:        #12140d;   /* near-black, cool green-charcoal        */
+  --color-bg-alt:    #191d13;   /* panel background, one step lighter     */
+  --color-bg-raised: #212619;   /* card background                        */
+  --color-cream:     #f3efe1;   /* primary warm cream text                */
+  --color-cream-dim: #c6c2ac;   /* secondary / muted text                 */
+  --color-olive:     #4a5738;   /* deep moss — borders, deep accents      */
+  --color-line:      #2a3020;   /* hairline borders / dividers            */
+  --color-sage:      #9caf7d;   /* sage/matcha accent — CTAs, links       */
+  --color-sage-dark: #7e9163;   /* sage hover / active                    */
+  --color-matcha:    #bdd08e;   /* light matcha — sparing highlight detail*/
 
   /* Typography */
   --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
@@ -58,9 +59,9 @@
   --radius-pill: 999px;
 
   /* Shadow */
-  --shadow-sm: 0 2px 10px rgba(8, 5, 2, 0.35);
-  --shadow-md: 0 16px 40px rgba(8, 5, 2, 0.40);
-  --shadow-lg: 0 30px 70px rgba(8, 5, 2, 0.50);
+  --shadow-sm: 0 2px 10px rgba(6, 8, 4, 0.35);
+  --shadow-md: 0 16px 40px rgba(6, 8, 4, 0.40);
+  --shadow-lg: 0 30px 70px rgba(6, 8, 4, 0.50);
 
   /* Motion */
   --ease: cubic-bezier(.22,.61,.36,1);
@@ -121,7 +122,7 @@ button {
 
 /* Accessible, visible focus state everywhere */
 :focus-visible {
-  outline: 2px solid var(--color-caramel);
+  outline: 2px solid var(--color-sage);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -130,8 +131,8 @@ button {
   position: absolute;
   left: -999px;
   top: auto;
-  background: var(--color-caramel);
-  color: #1a1108;
+  background: var(--color-sage);
+  color: var(--color-bg);
   padding: 0.75rem 1.25rem;
   border-radius: var(--radius-sm);
   z-index: 999;
@@ -142,7 +143,7 @@ button {
   top: var(--space-md);
 }
 
-em { color: var(--color-copper); font-style: italic; }
+em { color: var(--color-matcha); font-style: italic; }
 
 /* ---------------------------------------------------------------------
    3. LAYOUT UTILITIES
@@ -162,7 +163,7 @@ em { color: var(--color-copper); font-style: italic; }
   font-size: 0.78rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-caramel);
+  color: var(--color-sage);
   margin: 0 0 var(--space-sm);
 }
 
@@ -188,10 +189,10 @@ em { color: var(--color-copper); font-style: italic; }
 .btn:active { transform: translateY(0); }
 
 .btn-primary {
-  background: var(--color-caramel);
-  color: #201206;
+  background: var(--color-sage);
+  color: var(--color-bg);
 }
-.btn-primary:hover { background: var(--color-caramel-dark); }
+.btn-primary:hover { background: var(--color-sage-dark); }
 
 .btn-secondary {
   background: rgba(244, 236, 220, 0.08);
@@ -203,10 +204,10 @@ em { color: var(--color-copper); font-style: italic; }
 
 .btn-outline {
   background: transparent;
-  color: var(--color-caramel);
-  border-color: var(--color-caramel);
+  color: var(--color-sage);
+  border-color: var(--color-sage);
 }
-.btn-outline:hover { background: var(--color-caramel); color: #201206; }
+.btn-outline:hover { background: var(--color-sage); color: var(--color-bg); }
 
 .btn-sm { padding: 0.6rem 1.35rem; font-size: 0.88rem; }
 
@@ -252,8 +253,8 @@ em { color: var(--color-copper); font-style: italic; }
   color: var(--color-cream);
   margin-right: auto;
 }
-.logo-mark { color: var(--color-caramel); display: inline-flex; }
-.logo-accent { color: var(--color-caramel); }
+.logo-mark { color: var(--color-sage); display: inline-flex; }
+.logo-accent { color: var(--color-sage); }
 
 .main-nav ul {
   display: flex;
@@ -273,7 +274,7 @@ em { color: var(--color-copper); font-style: italic; }
   left: 0; right: 100%;
   bottom: -2px;
   height: 1px;
-  background: var(--color-caramel);
+  background: var(--color-sage);
   transition: right var(--dur-md) var(--ease);
 }
 .main-nav a:hover { color: var(--color-cream); }
@@ -305,7 +306,7 @@ em { color: var(--color-copper); font-style: italic; }
   top: 0; right: 0;
   height: 100vh;
   width: min(84vw, 360px);
-  background: #1b140d;
+  background: #171b10;
   border-left: 1px solid var(--color-line);
   z-index: 110;
   padding: calc(var(--header-h) + var(--space-md)) var(--space-lg) var(--space-lg);
@@ -324,7 +325,7 @@ em { color: var(--color-copper); font-style: italic; }
 .nav-scrim {
   position: fixed;
   inset: 0;
-  background: rgba(10, 7, 4, 0.55);
+  background: rgba(8, 10, 6, 0.55);
   z-index: 105;
   opacity: 0;
   transition: opacity var(--dur-md) var(--ease);
@@ -356,8 +357,8 @@ em { color: var(--color-copper); font-style: italic; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(15, 10, 6, 0.55) 0%, rgba(15, 10, 6, 0.35) 35%, rgba(15, 10, 6, 0.88) 92%),
-    linear-gradient(90deg, rgba(15, 10, 6, 0.55) 0%, rgba(15, 10, 6, 0.05) 45%);
+    linear-gradient(180deg, rgba(11, 14, 8, 0.55) 0%, rgba(11, 14, 8, 0.35) 35%, rgba(11, 14, 8, 0.88) 92%),
+    linear-gradient(90deg, rgba(11, 14, 8, 0.55) 0%, rgba(11, 14, 8, 0.05) 45%);
 }
 
 .hero-content {
@@ -400,7 +401,7 @@ em { color: var(--color-copper); font-style: italic; }
 .scroll-cue-line {
   width: 1px;
   height: 46px;
-  background: linear-gradient(var(--color-caramel), transparent);
+  background: linear-gradient(var(--color-sage), transparent);
 }
 
 /* ---------------------------------------------------------------------
@@ -416,7 +417,7 @@ em { color: var(--color-copper); font-style: italic; }
 .steam-divider--flip svg { transform: scaleY(-1); }
 .steam-path {
   fill: none;
-  stroke: var(--color-copper);
+  stroke: var(--color-matcha);
   stroke-width: 1.4;
   stroke-linecap: round;
   opacity: 0.55;
@@ -459,8 +460,8 @@ em { color: var(--color-copper); font-style: italic; }
 }
 .menu-tab:hover { color: var(--color-cream); }
 .menu-tab.is-active {
-  background: var(--color-caramel);
-  color: #201206;
+  background: var(--color-sage);
+  color: var(--color-bg);
 }
 
 .menu-panel[hidden] { display: none; }
@@ -492,7 +493,7 @@ em { color: var(--color-copper); font-style: italic; }
 
 .price {
   font-family: var(--font-mono);
-  color: var(--color-copper);
+  color: var(--color-matcha);
   font-size: 0.95rem;
   white-space: nowrap;
 }
@@ -524,7 +525,7 @@ em { color: var(--color-copper); font-style: italic; }
   position: absolute;
   width: 130px; height: 130px;
   top: -30px; right: -30px;
-  color: var(--color-copper);
+  color: var(--color-matcha);
   opacity: 0.5;
 }
 .ring-mark circle { fill: none; stroke: currentColor; stroke-width: 1.2; }
@@ -568,7 +569,7 @@ em { color: var(--color-copper); font-style: italic; }
   padding: var(--space-sm) var(--space-sm) var(--space-xs);
   font-size: 0.82rem;
   color: var(--color-cream);
-  background: linear-gradient(0deg, rgba(10,7,4,0.85), transparent);
+  background: linear-gradient(0deg, rgba(8,10,6,0.85), transparent);
   opacity: 0;
   transform: translateY(6px);
   transition: opacity var(--dur-sm) var(--ease), transform var(--dur-sm) var(--ease);
@@ -581,7 +582,7 @@ em { color: var(--color-copper); font-style: italic; }
   position: fixed;
   inset: 0;
   z-index: 200;
-  background: rgba(10, 7, 4, 0.92);
+  background: rgba(8, 10, 6, 0.92);
   backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
@@ -629,11 +630,11 @@ em { color: var(--color-copper); font-style: italic; }
   font-size: 0.78rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-copper);
+  color: var(--color-matcha);
   margin-bottom: var(--space-2xs);
 }
 .visit-block p { margin: 0 0 0.25rem; }
-.visit-block a:hover { color: var(--color-caramel); }
+.visit-block a:hover { color: var(--color-sage); }
 
 .hours-list li {
   display: flex;
@@ -652,7 +653,7 @@ em { color: var(--color-copper); font-style: italic; }
   font-size: 0.92rem;
   border-bottom: 1px solid transparent;
 }
-.social-links a:hover { color: var(--color-caramel); border-color: var(--color-caramel); }
+.social-links a:hover { color: var(--color-sage); border-color: var(--color-sage); }
 
 .visit-map {
   border-radius: var(--radius-lg);
@@ -667,7 +668,7 @@ em { color: var(--color-copper); font-style: italic; }
    12. FOOTER
 --------------------------------------------------------------------- */
 .site-footer {
-  background: #120d08;
+  background: #0d100a;
   padding-top: var(--space-2xl);
   border-top: 1px solid var(--color-line);
 }
@@ -684,7 +685,7 @@ em { color: var(--color-copper); font-style: italic; }
 
 .footer-nav { display: flex; gap: var(--space-md); flex-wrap: wrap; }
 .footer-nav a, .footer-social a { color: var(--color-cream-dim); font-size: 0.92rem; }
-.footer-nav a:hover, .footer-social a:hover { color: var(--color-caramel); }
+.footer-nav a:hover, .footer-social a:hover { color: var(--color-sage); }
 .footer-social { display: flex; gap: var(--space-md); }
 
 .footer-bottom {
@@ -700,7 +701,7 @@ em { color: var(--color-copper); font-style: italic; }
   margin: 0 auto;
 }
 .footer-credit a { text-decoration: underline; text-underline-offset: 3px; }
-.footer-credit a:hover { color: var(--color-caramel); }
+.footer-credit a:hover { color: var(--color-sage); }
 
 /* ---------------------------------------------------------------------
    13. SCROLL-REVEAL
