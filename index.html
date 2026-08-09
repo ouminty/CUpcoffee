@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===================================================================
+    SEO — Title & description
+    Replace with final owner-approved copy if it changes.
+  ==================================================================== -->
+  <title>CupCoffee | Independent Coffee Shop in Bathgate, Scotland</title>
+  <meta name="description" content="CupCoffee is an independent coffee shop on King Street, Bathgate — serving quality coffee, breakfast, bagels and bakery in a warm, relaxed space.">
+  <meta name="keywords" content="coffee shop Bathgate, cafe Bathgate, CupCoffee, King Street Bathgate, breakfast Bathgate">
+  <link rel="canonical" href="https://www.cupcoffee-bathgate.co.uk/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CupCoffee | Independent Coffee Shop in Bathgate, Scotland">
+  <meta property="og:description" content="Quality coffee, fresh food and a relaxed place to enjoy it — on King Street in the heart of Bathgate.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:url" content="https://www.cupcoffee-bathgate.co.uk/">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="CupCoffee">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon placeholder — replace /images/favicon files with real CupCoffee mark -->
+  <link rel="icon" href="data:,">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,480;0,9..144,600;1,9..144,420&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- ===================================================================
+    Local business structured data — REPLACE placeholder fields
+    (telephone, openingHours, sameAs socials) once confirmed.
+  ==================================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "CupCoffee",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 King Street",
+      "addressLocality": "Bathgate",
+      "addressRegion": "West Lothian",
+      "addressCountry": "GB"
+    },
+    "telephone": "PLACEHOLDER — add phone number",
+    "servesCuisine": "Coffee, Breakfast, Bakery",
+    "priceRange": "££",
+    "openingHours": "PLACEHOLDER — confirm opening hours",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- =====================================================
+    HEADER / NAVIGATION
+  ====================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#home" class="logo" aria-label="CupCoffee — home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 13h17v7.5A6.5 6.5 0 0 1 16.5 27h-4A6.5 6.5 0 0 1 6 20.5V13Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M23 15h1.8A3.2 3.2 0 0 1 28 18.2v0A3.2 3.2 0 0 1 24.8 21.4H23" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M11 9.2c-.9-.9-.9-1.9 0-3M15.5 9.2c-.9-.9-.9-1.9 0-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">Cup<span class="logo-accent">Coffee</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+
+      <a href="#menu" class="btn btn-primary btn-sm nav-cta">View Menu</a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav panel -->
+  <div class="mobile-nav" id="mobileNav" data-open="false">
+    <nav aria-label="Mobile">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <a href="#menu" class="btn btn-primary mobile-nav-cta">View Menu</a>
+    <p class="mobile-nav-address">2 King Street, Bathgate, Scotland</p>
+  </div>
+  <div class="nav-scrim" id="navScrim" hidden></div>
+
+  <main id="main">
+
+    <!-- =====================================================
+      HERO
+    ====================================================== -->
+    <section class="hero" id="home">
+      <div class="hero-media">
+        <!-- PLACEHOLDER IMAGE — replace with real CupCoffee photography -->
+        <img
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=80"
+          alt="Latte art being poured into a cup of coffee"
+          loading="eager"
+          fetchpriority="high">
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow reveal">2 King Street &middot; Bathgate</p>
+        <h1 class="hero-title reveal">
+          Good coffee.<br>
+          Good food.<br>
+          Good company.
+        </h1>
+        <p class="hero-sub reveal">
+          An independent coffee shop in the heart of Bathgate — a relaxed
+          space for quality coffee, fresh food, and good conversation.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#menu" class="btn btn-primary">View Menu</a>
+          <a href="#visit" class="btn btn-secondary">Find Us</a>
+        </div>
+      </div>
+
+      <a href="#menu" class="scroll-cue" aria-label="Scroll to menu">
+        <span class="scroll-cue-line" aria-hidden="true"></span>
+        Scroll
+      </a>
+    </section>
+
+    <div class="steam-divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 90" preserveAspectRatio="none">
+        <path class="steam-path" d="M0 45 C 150 10, 300 80, 450 45 S 750 10, 900 45 S 1100 80, 1200 45" />
+      </svg>
+    </div>
+
+    <!-- =====================================================
+      MENU
+    ====================================================== -->
+    <section class="menu section" id="menu">
+      <div class="section-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow">The Menu</p>
+          <h2>What we're pouring</h2>
+          <p class="section-lede">
+            A short, seasonal menu built around good coffee and simply
+            made food. <em>All items and prices below are placeholders —
+            confirm with CupCoffee before publishing.</em>
+          </p>
+        </div>
+
+        <div class="menu-tabs-wrap reveal">
+          <div class="menu-tabs" role="tablist" aria-label="Menu categories" id="menuTabs">
+            <button class="menu-tab is-active" role="tab" aria-selected="true" aria-controls="panel-coffee" id="tab-coffee" data-target="panel-coffee">Coffee</button>
+            <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-hot" id="tab-hot" data-target="panel-hot" tabindex="-1">Hot Drinks</button>
+            <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-iced" id="tab-iced" data-target="panel-iced" tabindex="-1">Iced Drinks</button>
+            <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-breakfast" id="tab-breakfast" data-target="panel-breakfast" tabindex="-1">Breakfast</button>
+            <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-bagels" id="tab-bagels" data-target="panel-bagels" tabindex="-1">Bagels</button>
+            <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-bakery" id="tab-bakery" data-target="panel-bakery" tabindex="-1">Bakery</button>
+            <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-turkish" id="tab-turkish" data-target="panel-turkish" tabindex="-1">Turkish Specials</button>
+          </div>
+        </div>
+
+        <div class="menu-panels reveal">
+
+          <div class="menu-panel is-active" id="panel-coffee" role="tabpanel" aria-labelledby="tab-coffee">
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-row"><h3>Espresso</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Rich, bold, straight up.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Americano</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Espresso, softened with hot water.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Flat White</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Silky microfoam, double shot.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Cappuccino</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Equal parts espresso, milk and foam.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Latte</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Smooth and mellow, lightly foamed.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Mocha</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Espresso and steamed milk with chocolate.</p></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-hot" role="tabpanel" aria-labelledby="tab-hot" hidden>
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-row"><h3>Hot Chocolate</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Made with steamed milk, not just syrup.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Chai Latte</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Spiced tea, steamed milk.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Tea Selection</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Placeholder — list actual tea range.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Turkish Coffee</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Slow-brewed, unfiltered, traditional.</p></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-iced" role="tabpanel" aria-labelledby="tab-iced" hidden>
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-row"><h3>Iced Latte</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Espresso over ice with cold milk.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Iced Americano</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Bold and refreshing, over ice.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Iced Mocha</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Chocolate, espresso, cold milk, ice.</p></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-breakfast" role="tabpanel" aria-labelledby="tab-breakfast" hidden>
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-row"><h3>Full Scottish Breakfast</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Placeholder — confirm plate contents.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Avocado on Toast</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Sourdough, chilli flakes, lemon.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Pancakes</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Placeholder — confirm toppings.</p></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-bagels" role="tabpanel" aria-labelledby="tab-bagels" hidden>
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-row"><h3>Bacon &amp; Egg Bagel</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Toasted, with your choice of sauce.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Cream Cheese Bagel</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Simple, classic, toasted to order.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Smoked Salmon Bagel</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>With cream cheese and dill.</p></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-bakery" role="tabpanel" aria-labelledby="tab-bakery" hidden>
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-row"><h3>Croissant</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Buttery, flaky, baked daily.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Cinnamon Bun</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Soft-baked with a sweet glaze.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Carrot Cake</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Placeholder — confirm recipe details.</p></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-turkish" role="tabpanel" aria-labelledby="tab-turkish" hidden>
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-row"><h3>Turkish Coffee</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Slow-brewed in a cezve, served unfiltered.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Simit</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Sesame-crusted bread ring.</p></li>
+              <li class="menu-item"><div class="menu-item-row"><h3>Börek</h3><span class="dots" aria-hidden="true"></span><span class="price">£X.XX</span></div><p>Placeholder — confirm filling(s) offered.</p></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+      ABOUT
+    ====================================================== -->
+    <section class="about section" id="about">
+      <div class="section-inner about-grid">
+        <div class="about-media reveal">
+          <!-- PLACEHOLDER IMAGE — replace with real CupCoffee interior/team photo -->
+          <img
+            src="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=1000&q=80"
+            alt="Warm, cosy interior seating area of a coffee shop"
+            loading="lazy" width="900" height="1100">
+          <svg class="ring-mark" viewBox="0 0 200 200" aria-hidden="true">
+            <circle cx="100" cy="100" r="70" />
+            <circle cx="132" cy="86" r="34" />
+          </svg>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="eyebrow">About CupCoffee</p>
+          <h2>A local café, made for lingering</h2>
+          <!-- PLACEHOLDER COPY — replace with CupCoffee's real story, in the owner's own words -->
+          <p>
+            CupCoffee is a local café in the heart of Bathgate, bringing
+            together quality coffee, fresh food and a relaxed place to
+            enjoy it. Whether you're stopping in for a quick espresso or
+            settling in for the afternoon, this is a space built around
+            good coffee and good company.
+          </p>
+          <p class="about-note">
+            <em>Placeholder text — replace with CupCoffee's own story: how it started, what matters to the team, and what makes it Bathgate's own.</em>
+          </p>
+          <a href="#visit" class="btn btn-outline">Find Us</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="steam-divider steam-divider--flip" aria-hidden="true">
+      <svg viewBox="0 0 1200 90" preserveAspectRatio="none">
+        <path class="steam-path" d="M0 45 C 150 10, 300 80, 450 45 S 750 10, 900 45 S 1100 80, 1200 45" />
+      </svg>
+    </div>
+
+    <!-- =====================================================
+      GALLERY
+    ====================================================== -->
+    <section class="gallery section" id="gallery">
+      <div class="section-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow">Gallery</p>
+          <h2>A little taste of CupCoffee</h2>
+          <p class="section-lede">Placeholder photography — swap in real CupCoffee shots of the space, the food and the people who make it.</p>
+        </div>
+
+        <div class="masonry reveal" id="galleryGrid">
+          <button class="masonry-item span-tall" data-caption="Latte art">
+            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80" alt="Barista holding a latte with detailed latte art" loading="lazy">
+          </button>
+          <button class="masonry-item" data-caption="Fresh pastries">
+            <img src="https://images.unsplash.com/photo-1517231925375-bf2cb42917a5?auto=format&fit=crop&w=800&q=80" alt="Basket of freshly baked pastries and croissants" loading="lazy">
+          </button>
+          <button class="masonry-item" data-caption="Coffee beans">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80" alt="Close-up of roasted coffee beans" loading="lazy">
+          </button>
+          <button class="masonry-item span-tall" data-caption="Café interior">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Cosy café interior with warm lighting" loading="lazy">
+          </button>
+          <button class="masonry-item" data-caption="Breakfast plate">
+            <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80" alt="Breakfast plate with eggs and toast" loading="lazy">
+          </button>
+          <button class="masonry-item" data-caption="Good company">
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80" alt="Friends chatting over coffee at a café table" loading="lazy">
+          </button>
+          <button class="masonry-item" data-caption="Behind the counter">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Barista preparing a pour-over coffee" loading="lazy">
+          </button>
+          <button class="masonry-item span-tall" data-caption="Bakery case">
+            <img src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=800&q=80" alt="Coffee cup beside a croissant on a wooden table" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="">
+      <button class="lightbox-next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+    </div>
+
+    <!-- =====================================================
+      VISIT
+    ====================================================== -->
+    <section class="visit section" id="visit">
+      <div class="section-inner visit-grid">
+        <div class="visit-info reveal">
+          <p class="eyebrow">Visit Us</p>
+          <h2>Come say hello</h2>
+
+          <address>
+            <strong>CupCoffee</strong><br>
+            2 King Street<br>
+            Bathgate, Scotland
+          </address>
+
+          <div class="visit-block">
+            <h3>Opening Hours</h3>
+            <!-- PLACEHOLDER — confirm real opening hours -->
+            <ul class="hours-list">
+              <li><span>Monday – Friday</span><span>X:XX AM – X:XX PM</span></li>
+              <li><span>Saturday</span><span>X:XX AM – X:XX PM</span></li>
+              <li><span>Sunday</span><span>X:XX AM – X:XX PM</span></li>
+            </ul>
+          </div>
+
+          <div class="visit-block">
+            <h3>Contact</h3>
+            <!-- PLACEHOLDER — add real phone / email -->
+            <p><a href="tel:+441506000000">01506 XXX XXX</a></p>
+            <p><a href="mailto:hello@cupcoffee-bathgate.co.uk">hello@cupcoffee-bathgate.co.uk</a></p>
+          </div>
+
+          <div class="visit-block">
+            <h3>Follow</h3>
+            <!-- PLACEHOLDER — add real social links -->
+            <div class="social-links">
+              <a href="#" aria-label="CupCoffee on Instagram">Instagram</a>
+              <a href="#" aria-label="CupCoffee on Facebook">Facebook</a>
+            </div>
+          </div>
+
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=2+King+Street+Bathgate+Scotland" target="_blank" rel="noopener noreferrer">Get Directions</a>
+        </div>
+
+        <div class="visit-map reveal">
+          <iframe
+            title="Map showing CupCoffee at 2 King Street, Bathgate"
+            src="https://www.google.com/maps?q=2+King+Street,+Bathgate,+Scotland&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================
+    FOOTER
+  ====================================================== -->
+  <footer class="site-footer">
+    <div class="section-inner footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-text">Cup<span class="logo-accent">Coffee</span></span>
+        </a>
+        <p>2 King Street, Bathgate, Scotland</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <div class="footer-social">
+        <!-- PLACEHOLDER — add real social links -->
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> CupCoffee. All rights reserved.</p>
+      <p class="footer-credit">Concept website by <a href="#">[YOUR NAME]</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
